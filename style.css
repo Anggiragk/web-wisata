@@ -9,9 +9,8 @@ body {
 .jumbotron {
 	min-height: 450px;
 	background-image: url(gambar/dikaseva-8o4W9LZv6eo-unsplash1.jpg);
-	background-size: cover;	
 	background-repeat:no-repeat;
-	background-position: 0px -170px;
+	background-position: 0px -800px;
 
 }
 
@@ -254,8 +253,6 @@ footer {
 	nav a{
 		font-size: 0.7em;
 	}
-	.jumbotron p{
-		color :white
-	}
+	
 
 }
