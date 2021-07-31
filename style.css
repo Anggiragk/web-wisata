@@ -1,0 +1,261 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.jumbotron {
+	min-height: 450px;
+	background-image: url(gambar/dikaseva-8o4W9LZv6eo-unsplash1.jpg);
+	background-size: cover;	
+	background-repeat:no-repeat;
+	background-position: 0px -170px;
+
+}
+
+.jumbotron h1 {
+	display: inline-block;	
+	font-size: 4em;
+	text-align: left;
+	margin-top: 170px;
+	margin-left: 50px;
+	text-shadow: 0px 2px 1px black;
+	color: white;
+
+}
+
+.jumbotron .satu {
+		color: red;
+}
+
+
+.jumbotron p {
+		margin-top: -25px;
+		color: black;
+		font-size: 2em;
+		margin-left: 50px;
+}
+
+header {
+	display: inline;
+}
+
+nav{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: -16px;
+	background-color: black;
+	position: sticky;
+	top:0;
+}
+
+nav	li {
+	display: inline-block;
+	padding: 5px;
+		
+}
+
+nav a{
+	text-decoration: none;
+	font-size: 	1.3em;
+	padding: 5px;
+	color: white;
+	background-color: red;
+	transition: 1s;
+}
+
+nav a.warna{
+	color: red;
+	background-color:white;
+}
+
+
+button {
+	color: black;
+	font-weight: bold;
+	background-color: blue;
+	transform: scale(1);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.8); 
+}
+
+
+
+.bd {
+	background-image: url(gambar/3.jpg);
+}
+
+
+main {
+	display: flex;
+	padding: 25px;
+}
+
+#content{
+	flex-basis: 78%;
+}
+
+#content h2{
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#content p {
+		text-indent: 20px;
+}
+.gambar {
+	width: 100%;
+	max-height: 300px;
+	object-position: center;
+	object-fit: cover;
+}
+
+aside {
+	flex-basis: 22%;
+	text-align: center;
+	padding : 5px;
+	margin-left: 5px;
+	max-height: 500px;
+}
+
+.profile img {
+	border-radius: 50%;
+	box-shadow: 1px 2px 3px rgba( 0.0.0.0);
+	object-position: center;
+	object-fit: cover;
+}
+
+.about {
+	font-variant: small-caps;
+	font-size: 2em;
+	font-weight: bold;
+	cursor: pointer;
+	border: 5px solid black;
+}
+
+.about:hover{
+	background-color: red;
+}
+
+.merah{
+	color: red;
+}
+
+.putih{
+	color: green;
+}
+
+.hitam{
+	color: blue;
+}
+
+
+
+.profile section {
+	margin-top: 10px;
+	text-align: left;
+	font-size: 1.3em;
+
+
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+   background-color: white;
+}
+
+
+
+
+footer {
+	text-align: center;
+	padding: 10px;
+	line-height: 4px;
+	background-color: black;
+	color: 	white;
+	bottom: 0px;
+
+}
+
+.copy {
+	color: red;
+}
+
+
+
+
+
+
+
+
+/*Responsive Break point*/
+
+@media screen and (max-width:1400px) {
+	.profile section{
+		font-size: 0.8em;
+	   margin-left: 20px;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	
+	main {
+		display:inline;
+	}
+
+	nav li {
+		text-align: center;
+	}
+
+	article h2 {
+		text-align: center;
+	}
+
+	.profile {
+		margin-left: 0;
+	}
+   	#content,
+   	aside {
+       width: 100%;
+       padding: 0;
+   }
+
+   .profile section {
+   	text-align: left;
+   	font-size: 1.2em; 
+   }
+}
+
+@media screen and (max-width:750px) {
+	nav a{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width:700px) {
+	nav a{
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width:650px) {
+	nav a{
+		font-size: 0.7em;
+	}
+	.jumbotron p{
+		color :white
+	}
+
+}
